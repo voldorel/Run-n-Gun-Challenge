@@ -9,7 +9,13 @@ public class MovementNode : CharacterNode
     [SerializeField]
     private float _rotationSpeed;
     [SerializeField]
+    private float _cameraSpeedMultiplier;
+    [SerializeField]
+    private float _cameraRotationSpeedMultiplier;
+    [SerializeField]
     private Transform _targetTransform;
+    [SerializeField]
+    private Transform _targetCameraTransform;
 
 
     private GameObject _player { get; set; }
@@ -28,13 +34,16 @@ public class MovementNode : CharacterNode
     {
         while (!_finishedExecution)
         {
-            if (Vector3.Distance(_targetTransform.position, _player.transform.position) <= 0.3f)
+            if (Vector3.Distance(_targetTransform.position, _player.transform.position) <= 0.1f)
             {
                 _finishedExecution = true;
             } else
             {
                 _player.transform.position = Vector3.MoveTowards(_player.transform.position, _targetTransform.position, _movementSpeed * Time.deltaTime);
                 _player.transform.rotation = Quaternion.Lerp(_player.transform.rotation, _targetTransform.rotation, _rotationSpeed * Time.deltaTime);
+
+                Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, _targetCameraTransform.position, _movementSpeed * _cameraSpeedMultiplier * Time.deltaTime);
+                Camera.main.transform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, _targetCameraTransform.rotation, _rotationSpeed * _cameraRotationSpeedMultiplier * Time.deltaTime);
             }
             yield return new WaitForFixedUpdate();
         }
