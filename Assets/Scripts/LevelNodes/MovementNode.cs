@@ -17,6 +17,7 @@ public class MovementNode : CharacterNode
     [SerializeField]
     private Transform _targetCameraTransform;
 
+    public CharacterAction SelectedCharacterAction;
 
     private GameObject _player { get; set; }
 
@@ -50,12 +51,31 @@ public class MovementNode : CharacterNode
     }
 
     
-    
+    private IEnumerator Vault() // needs rewriting
+    {
+
+        _player.GetComponent<PlayerMotor>().Vault();
+        for (int i = 0; i < 50; i++)
+            yield return new WaitForFixedUpdate();
+        _player.GetComponent<PlayerMotor>().StartSlowMotion();
+        for (int i = 0; i < 10; i++)
+            yield return new WaitForFixedUpdate();
+        _player.GetComponent<PlayerMotor>().StopSlowMotion();
+
+    }
 
     protected override void Execute()
     {
         StartCoroutine(MoveTowardTarget());
+        if (SelectedCharacterAction == CharacterAction.Vault)
+            StartCoroutine(Vault());
     }
 
+    public enum CharacterAction
+    {
+        None,
+        Vault,
+
+    }
     
 }

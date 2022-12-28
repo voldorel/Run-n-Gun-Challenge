@@ -24,7 +24,10 @@ public class PlayerMotor : MonoBehaviour
         {
             _animationController.SetTrigger("Dive");
         }
-
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            _animationController.SetTrigger("Vault");
+        }
         if (Input.GetKeyDown(KeyCode.S))
         {
             StartSlowMotion();
@@ -35,13 +38,18 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
-    private void StartSlowMotion()
+    public void StartSlowMotion()
     {
         Time.timeScale = SlowMotionTimescale;
         Time.fixedDeltaTime = _startFixedDeltaTime * SlowMotionTimescale;
     }
 
-    private void StopSlowMotion()
+    public void Vault() //only for test
+    {
+        _animationController.SetTrigger("Vault");
+    }
+
+    public void StopSlowMotion()
     {
         Time.timeScale = _startTimescale;
         Time.fixedDeltaTime = _startFixedDeltaTime;
