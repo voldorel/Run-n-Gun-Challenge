@@ -18,7 +18,7 @@ public class StartNode : CharacterNode
         {
             Debug.Log(execption + " player model should be assigned player tag");
         }
-        base.TriggerNode();
+        TriggerNode();
     }
 
     protected override void Execute()

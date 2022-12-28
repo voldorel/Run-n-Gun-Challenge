@@ -53,12 +53,11 @@ public class MovementNode : CharacterNode
     
     private IEnumerator Vault() // needs rewriting
     {
-
         _player.GetComponent<PlayerMotor>().Vault();
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < 40; i++)
             yield return new WaitForFixedUpdate();
         _player.GetComponent<PlayerMotor>().StartSlowMotion();
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 100; i++)
             yield return new WaitForFixedUpdate();
         _player.GetComponent<PlayerMotor>().StopSlowMotion();
 

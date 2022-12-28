@@ -7,20 +7,24 @@ public abstract class CharacterNode : MonoBehaviour
     public CharacterNode NextNode;
 
     protected bool _finishedExecution { get; set; }
+    protected bool _calledNext { get; set; }
     protected abstract void Execute();
 
     private void Awake()
     {
         _finishedExecution = false;
+        _calledNext = false;
     }
 
     public void Update()
     {
-        if (_finishedExecution)
+        if (_finishedExecution && !_calledNext)
         {
             if (NextNode != null)
             {
                 NextNode.TriggerNode();
+                _finishedExecution = false;
+                _calledNext = true;
             }
         }
     }
