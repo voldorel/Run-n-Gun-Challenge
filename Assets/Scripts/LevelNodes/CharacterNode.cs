@@ -24,6 +24,14 @@ public abstract class CharacterNode : MonoBehaviour
             }
         }
     }
+    public void OnDrawGizmos()
+    {
+        if (NextNode != null)
+        {
+            //Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, NextNode.transform.position);
+        }
+    }
 
     public void TriggerNode()
     {

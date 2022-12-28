@@ -522,7 +522,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213320734}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -613,7 +613,7 @@ MonoBehaviour:
   _movementSpeed: 0.02
   _rotationSpeed: 0.45
   _cameraSpeedMultiplier: 5
-  _cameraRotationSpeedMultiplier: 0.09
+  _cameraRotationSpeedMultiplier: 0.07
   _targetTransform: {fileID: 295336412}
   _targetCameraTransform: {fileID: 478630133}
   SelectedCharacterAction: 0
@@ -1391,7 +1391,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788758389}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1862,7 +1862,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059555117}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1943,7 +1943,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088199869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2034,7 +2034,7 @@ MonoBehaviour:
   _movementSpeed: 0.04
   _rotationSpeed: 0.45
   _cameraSpeedMultiplier: 1
-  _cameraRotationSpeedMultiplier: 0.05
+  _cameraRotationSpeedMultiplier: 0.07
   _targetTransform: {fileID: 1093031871}
   _targetCameraTransform: {fileID: 445660049}
   SelectedCharacterAction: 0
@@ -2276,7 +2276,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291987248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2452,7 +2452,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561610956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2979,7 +2979,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797212918}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3060,7 +3060,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847285129}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3151,7 +3151,7 @@ MonoBehaviour:
   _movementSpeed: 0.02
   _rotationSpeed: 0.45
   _cameraSpeedMultiplier: 5
-  _cameraRotationSpeedMultiplier: 0.09
+  _cameraRotationSpeedMultiplier: 0.07
   _targetTransform: {fileID: 1863764999}
   _targetCameraTransform: {fileID: 498557298}
   SelectedCharacterAction: 0
