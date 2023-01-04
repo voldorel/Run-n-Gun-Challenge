@@ -36,7 +36,30 @@ public class PlayerMotor : MonoBehaviour
         {
             StopSlowMotion();
         }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            ShootBullet();
+        }
     }
+
+    public void ShootBullet()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 20))
+        {
+            if (hit.transform.tag.Equals("Enemy"))
+            {
+                EnemyBehaviour enemyBehaviour = hit.transform.GetComponentInParent<EnemyBehaviour>();
+                if (enemyBehaviour != null)
+                {
+                    enemyBehaviour.DepartFromThisMortalCoil();
+                }
+            }
+            Debug.Log(hit.transform.tag);
+        }
+    }
+
 
     public void StartSlowMotion()
     {

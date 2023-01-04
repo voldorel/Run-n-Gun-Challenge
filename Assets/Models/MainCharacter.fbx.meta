@@ -18,6 +18,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: MatGun01
+    second: {fileID: 2100000, guid: cdef59a26612d9f4d982477b459b970d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatGun02
+    second: {fileID: 2100000, guid: 846d829d2a5ce574d9496b493f4341d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Pants
     second: {fileID: 2100000, guid: 83bb48b7d2593a240a80bb1df60ea5b5, type: 2}
   - first:
@@ -109,7 +119,7 @@ ModelImporter:
       takeName: Armature|Run
       internalID: 0
       firstFrame: 0
-      lastFrame: 29
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
