@@ -54,6 +54,7 @@ public class PlayerMotor : MonoBehaviour
                 if (enemyBehaviour != null)
                 {
                     enemyBehaviour.DepartFromThisMortalCoil();
+                    hit.transform.GetComponent<Rigidbody>().AddForceAtPosition(200000 * ray.direction.normalized, hit.transform.position);
                 }
             }
             Debug.Log(hit.transform.tag);
