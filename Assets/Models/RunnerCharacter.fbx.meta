@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: c314ba2906447b34b8bb49141e2ef3f4
+guid: b258083fd523c864cb13d0a0080ef0eb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -8945691123924629249
     second: Armature|Idle
+  - first:
+      74: 2688611728853353290
+    second: Armature|Object001|Take 001|BaseLayer
   - first:
       74: -7551964380084998518
     second: Armature|Run
@@ -17,47 +20,47 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Gloves
-    second: {fileID: 2100000, guid: 8b958610ac9c466449ea29d1dfbf8426, type: 2}
+    second: {fileID: 2100000, guid: c15e4f952da5c24428d2e89d54ef1630, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MatGun01
-    second: {fileID: 2100000, guid: cdef59a26612d9f4d982477b459b970d, type: 2}
+    second: {fileID: 2100000, guid: 0e7129f75c0010945ad6259a1a4c0ee2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MatGun02
-    second: {fileID: 2100000, guid: 846d829d2a5ce574d9496b493f4341d9, type: 2}
+    second: {fileID: 2100000, guid: 802c591098a038d4982925659bf4c1cd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Pants
-    second: {fileID: 2100000, guid: 83bb48b7d2593a240a80bb1df60ea5b5, type: 2}
+    second: {fileID: 2100000, guid: 4de6f68606a5e7440b4f77484412be05, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shades
-    second: {fileID: 2100000, guid: c034e6e011edc7d4d92194024c87ec64, type: 2}
+    second: {fileID: 2100000, guid: d3a1c08f2850f394a91dfba77876a155, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shirt
-    second: {fileID: 2100000, guid: 581951a7784244a429a5c7bce8941cae, type: 2}
+    second: {fileID: 2100000, guid: 08b1b8f1ff70bae41bf1f37403726a2c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shoe
-    second: {fileID: 2100000, guid: a92bdbd3991210d42bcb605ee28f8888, type: 2}
+    second: {fileID: 2100000, guid: 856d92249eae9024f92a870900fd57d5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin
-    second: {fileID: 2100000, guid: 97d8a0c62f9f71245a9787d3a872bcba, type: 2}
+    second: {fileID: 2100000, guid: 824dcd92257aec641be5744701288375, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Tie
-    second: {fileID: 2100000, guid: cd3d82ee19510f746af23348f9c9352c, type: 2}
+    second: {fileID: 2100000, guid: 2ed4e87faf8157a4b9d4f0a0c98b0a94, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -68,84 +71,15 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: <Root Transform>
+    motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
-      does not match position in animation file:\n\t'UpperLeg.L' : position error
-      = 107.558609 mm\n\t'LowerLeg.L' : position error = 315.746826 mm\n\t'Foot.L'
-      : position error = 358.759827 mm\n\t'UpperLeg.R' : position error = 107.558609
-      mm\n\t'LowerLeg.R' : position error = 315.746826 mm\n\t'Foot.R' : position
-      error = 358.759827 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Armature|Run' has import animation warnings
       that might lower retargeting quality:\nNote: Activate translation DOF on avatar
       to improve retargeting quality.\n\t'Arm.L' has translation animation that will
       be discarded.\n\t'Arm.R' has translation animation that will be discarded.\n"
-    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Armature|Idle':\n\tLeftLowerLeg
-      average position error 211.0 mm and maximum position error 211.0 mm at time
-      0: 0 (0.0%) Frame 0\n\tLeftFoot average position error 213.8 mm and maximum
-      position error 213.8 mm at time 0: 0 (0.0%) Frame 0\n\tRightLowerLeg average
-      position error 211.0 mm and maximum position error 211.0 mm at time 0: 0 (0.0%)
-      Frame 0\n\tRightFoot average position error 213.8 mm and maximum position error
-      213.8 mm at time 0: 0 (0.0%) Frame 0\n\tLeftUpperArm average position error
-      211.4 mm and maximum position error 211.4 mm at time 0: 0 (0.0%) Frame 0\n\tLeftLowerArm
-      average position error 211.5 mm and maximum position error 211.5 mm at time
-      0: 0 (0.0%) Frame 0\n\tLeftHand average position error 211.4 mm and maximum
-      position error 211.4 mm at time 0: 0 (0.0%) Frame 0\n\tRightUpperArm average
-      position error 211.4 mm and maximum position error 211.4 mm at time 0: 0 (0.0%)
-      Frame 0\n\tRightLowerArm average position error 211.5 mm and maximum position
-      error 211.5 mm at time 0: 0 (0.0%) Frame 0\n\tRightHand average position error
-      211.4 mm and maximum position error 211.4 mm at time 0: 0 (0.0%) Frame 0\n\tHead
-      average position error 211.4 mm and maximum position error 211.4 mm at time
-      0: 0 (0.0%) Frame 0\n\nRetargeting quality report for clip 'Armature|Object001|Take
-      001|BaseLayer':\n\tLeftLowerLeg average position error 518.7 mm and maximum
-      position error 518.7 mm at time 0: 0 (0.0%) Frame 0\n\tLeftFoot average position
-      error 882.4 mm and maximum position error 882.4 mm at time 0: 0 (0.0%) Frame
-      0\n\tRightLowerLeg average position error 517.7 mm and maximum position error
-      517.7 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot average position error 881.3
-      mm and maximum position error 881.3 mm at time 0: 0 (0.0%) Frame 0\n\tLeftUpperArm
-      average position error 417.3 mm and maximum position error 417.3 mm at time
-      0: 0 (0.0%) Frame 0\n\tLeftLowerArm average position error 613.0 mm and maximum
-      position error 613.0 mm at time 0: 0 (0.0%) Frame 0\n\tLeftHand average position
-      error 850.2 mm and maximum position error 850.2 mm at time 0: 0 (0.0%) Frame
-      0\n\tRightUpperArm average position error 414.9 mm and maximum position error
-      414.9 mm at time 0: 0 (0.0%) Frame 0\n\tRightLowerArm average position error
-      608.7 mm and maximum position error 608.7 mm at time 0: 0 (0.0%) Frame 0\n\tRightHand
-      average position error 845.4 mm and maximum position error 845.4 mm at time
-      0: 0 (0.0%) Frame 0\n\tHead average position error 740.1 mm and maximum position
-      error 740.1 mm at time 0: 0 (0.0%) Frame 0\n\nRetargeting quality report for
-      clip 'Armature|Run':\n\tLeftLowerLeg average position error 243.0 mm and maximum
-      position error 252.7 mm at time 1: 6 (92.3%) Frame 36\n\tLeftFoot average position
-      error 245.2 mm and maximum position error 254.8 mm at time 1: 6 (92.3%) Frame
-      36\n\tRightLowerLeg average position error 243.0 mm and maximum position error
-      252.7 mm at time 1: 6 (92.3%) Frame 36\n\tRightFoot average position error
-      245.0 mm and maximum position error 253.7 mm at time 1: 6 (92.3%) Frame 36\n\tLeftUpperArm
-      average position error 261.5 mm and maximum position error 277.0 mm at time
-      0:15 (38.5%) Frame 15\n\tLeftLowerArm average position error 261.6 mm and maximum
-      position error 277.2 mm at time 0:15 (38.5%) Frame 15\n\tLeftHand average position
-      error 261.5 mm and maximum position error 277.0 mm at time 0:15 (38.5%) Frame
-      15\n\tRightUpperArm average position error 263.2 mm and maximum position error
-      278.3 mm at time 1: 6 (92.3%) Frame 36\n\tRightLowerArm average position error
-      263.3 mm and maximum position error 278.4 mm at time 1: 6 (92.3%) Frame 36\n\tRightHand
-      average position error 263.2 mm and maximum position error 278.3 mm at time
-      1: 6 (92.3%) Frame 36\n\tHead average position error 243.3 mm and maximum position
-      error 252.9 mm at time 1: 6 (92.3%) Frame 36\n\nRetargeting quality report
-      for clip 'Armature|TPose':\n\tLeftLowerLeg average position error 227.0 mm
-      and maximum position error 227.0 mm at time 0: 0 (0.0%) Frame 0\n\tLeftFoot
-      average position error 219.5 mm and maximum position error 219.5 mm at time
-      0: 0 (0.0%) Frame 0\n\tRightLowerLeg average position error 227.9 mm and maximum
-      position error 227.9 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot average position
-      error 219.5 mm and maximum position error 219.5 mm at time 0: 0 (0.0%) Frame
-      0\n\tLeftUpperArm average position error 222.0 mm and maximum position error
-      222.0 mm at time 0: 0 (0.0%) Frame 0\n\tLeftLowerArm average position error
-      226.5 mm and maximum position error 226.5 mm at time 0: 0 (0.0%) Frame 0\n\tLeftHand
-      average position error 222.0 mm and maximum position error 222.0 mm at time
-      0: 0 (0.0%) Frame 0\n\tRightUpperArm average position error 222.0 mm and maximum
-      position error 222.0 mm at time 0: 0 (0.0%) Frame 0\n\tRightLowerArm average
-      position error 226.5 mm and maximum position error 226.5 mm at time 0: 0 (0.0%)
-      Frame 0\n\tRightHand average position error 222.0 mm and maximum position error
-      222.0 mm at time 0: 0 (0.0%) Frame 0\n\tHead average position error 222.0 mm
-      and maximum position error 222.0 mm at time 0: 0 (0.0%) Frame 0\n"
+    animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
@@ -158,8 +92,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|TPose
-      takeName: Armature|TPose
+      name: Armature|Idle
+      takeName: Armature|Idle
       internalID: 0
       firstFrame: 0
       lastFrame: 1
@@ -216,8 +150,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Idle
-      takeName: Armature|Idle
+      name: Armature|TPose
+      takeName: Armature|TPose
       internalID: 0
       firstFrame: 0
       lastFrame: 1
@@ -411,206 +345,206 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: MainCharacter(Clone)
+    - name: RunnerCharacter(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Armature
-      parentName: MainCharacter(Clone)
+      parentName: RunnerCharacter(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 100, z: 100}
+      scale: {x: 1, y: 1, z: 1}
     - name: Hip
       parentName: Armature
-      position: {x: -0, y: 0, z: 0.005064049}
-      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      position: {x: -0, y: 0, z: 0.4260437}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
       scale: {x: 1, y: 1, z: 1}
     - name: Spine
       parentName: Hip
-      position: {x: -0, y: 0.001691795, z: 0}
+      position: {x: -0, y: 0.1691795, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Arm.L
       parentName: Spine
-      position: {x: -0.0012128453, y: 0.0022058166, z: 0.00020351283}
-      rotation: {x: -0.00000002980233, y: -0.00000002980233, z: 0.7158004, w: 0.698305}
-      scale: {x: 0.9999989, y: 0.99999994, z: 1}
+      position: {x: -0.12128453, y: 0.22058165, z: 0.020351283}
+      rotation: {x: 0.04549155, y: -0.055937417, z: 0.7298296, w: 0.6798163}
+      scale: {x: 0.99999905, y: 0.9999998, z: 1}
     - name: Hand.L
       parentName: Arm.L
-      position: {x: -1.3321502e-10, y: 0.0019771312, z: 2.9161628e-12}
-      rotation: {x: 0.0075353915, y: -0.00056776317, z: 0.010543284, w: 0.9999159}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.000000023952452, y: 0.1977131, z: -0.000000009313226}
+      rotation: {x: 0.020646134, y: 0.03110339, z: -0.07156296, w: 0.9967372}
+      scale: {x: 0.9999998, y: 1, z: 0.99999994}
     - name: Fist.L
       parentName: Hand.L
-      position: {x: 2.8145222e-10, y: 0.0018124626, z: 1.8626451e-11}
-      rotation: {x: 0.08514209, y: 0.0051649692, z: 0.03464163, w: 0.9957531}
-      scale: {x: 0.9999999, y: 1, z: 1}
+      position: {x: 0.00000003601312, y: 0.18124624, z: -0.0000000068102963}
+      rotation: {x: -0.09976486, y: 0.02785025, z: -0.049701903, w: 0.99337864}
+      scale: {x: 0.9999998, y: 1, z: 1.0000001}
     - name: Weapon.L
       parentName: Fist.L
-      position: {x: -0.00010788785, y: 0.0012151593, z: 0.00024943982}
-      rotation: {x: 0.107424796, y: 0.6892819, z: -0.07814796, w: 0.71221024}
+      position: {x: -0.010788785, y: 0.12151593, z: 0.024943981}
+      rotation: {x: 0.043262508, y: 0.68248695, z: -0.0040020566, w: 0.7296053}
       scale: {x: 0.9999999, y: 1, z: 1}
     - name: Weapon.L_end
       parentName: Weapon.L
-      position: {x: -0, y: 0.00076260715, z: 0}
+      position: {x: -0, y: 0.076260716, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Arm.R
       parentName: Spine
-      position: {x: 0.0012128453, y: 0.0022058166, z: 0.00020351283}
-      rotation: {x: 0.00000002980233, y: -0.00000002980233, z: 0.7158004, w: -0.698305}
-      scale: {x: 0.9999989, y: 0.99999994, z: 1}
+      position: {x: 0.12128453, y: 0.22058165, z: 0.020351283}
+      rotation: {x: -0.04549161, y: -0.055937506, z: 0.72982955, w: -0.6798164}
+      scale: {x: 0.99999905, y: 0.9999998, z: 1}
     - name: Hand.R
       parentName: Arm.R
-      position: {x: 1.3321502e-10, y: 0.0019771312, z: 2.9161628e-12}
-      rotation: {x: 0.0075353915, y: 0.00056776317, z: -0.010543284, w: 0.9999159}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.000000006548362, y: 0.19771318, z: 0.0000000018626451}
+      rotation: {x: 0.020646252, y: -0.031103384, z: 0.07156294, w: 0.9967372}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.9999999}
     - name: Fist.R
       parentName: Hand.R
-      position: {x: -2.8145222e-10, y: 0.0018124626, z: 1.8626451e-11}
-      rotation: {x: 0.08514211, y: -0.00516499, z: -0.03464143, w: 0.9957531}
-      scale: {x: 0.9999999, y: 1, z: 1}
+      position: {x: -0.0000000062232743, y: 0.18124628, z: -0.0000000032014214}
+      rotation: {x: -0.09976484, y: -0.027850177, z: 0.04970195, w: 0.99337864}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
     - name: Weapon.R
       parentName: Fist.R
-      position: {x: 0.00010788818, y: 0.0012151588, z: 0.00024944017}
-      rotation: {x: 0.10742499, y: -0.6892819, z: 0.07814808, w: 0.7122101}
+      position: {x: 0.010788819, y: 0.12151589, z: 0.024944019}
+      rotation: {x: 0.04326309, y: -0.6824872, z: 0.004002818, w: 0.729605}
       scale: {x: 0.9999999, y: 0.99999994, z: 1.0000001}
     - name: Weapon.R_end
       parentName: Weapon.R
-      position: {x: -0, y: 0.00076260715, z: 0}
+      position: {x: -0, y: 0.076260716, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Head
       parentName: Spine
-      position: {x: -0.0000063459115, y: 0.0046106353, z: 0.00025566565}
-      rotation: {x: 0.67485785, y: -0.0008274008, z: -0.003297005, w: 0.73793995}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.00063459115, y: 0.46106362, z: 0.025566567}
+      rotation: {x: 0.67468745, y: -0.014186829, z: -0.015513997, w: 0.7378041}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
     - name: Head_end
       parentName: Head
-      position: {x: -0, y: 0.0016925918, z: 0}
+      position: {x: -0, y: 0.16925919, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: UpperLeg.L
       parentName: Hip
-      position: {x: -0.00064115133, y: 0.00019654751, z: 0.00022895186}
-      rotation: {x: -0.00000089054674, y: -0.000000006732136, z: 0.99296784, w: 0.11838463}
-      scale: {x: 1.0000045, y: 1, z: 1}
+      position: {x: -0.06411514, y: 0.01965475, z: 0.022895187}
+      rotation: {x: 0.5550109, y: 0.03700453, z: 0.8209474, w: 0.12899218}
+      scale: {x: 0.99999875, y: 0.9999999, z: 1}
     - name: LowerLeg.L
       parentName: UpperLeg.L
-      position: {x: 1.1699022e-10, y: 0.0020767674, z: -5.47125e-12}
-      rotation: {x: -0.010614155, y: -0.001194938, z: 0.11201078, w: 0.9936496}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+      position: {x: 0.000000026077032, y: 0.20801401, z: -0.000000011175871}
+      rotation: {x: -0.045782078, y: -0.00048004376, z: 0.34163067, w: 0.93871844}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
     - name: Foot.L
       parentName: LowerLeg.L
-      position: {x: 4.3828195e-11, y: 0.002381838, z: 8.731149e-12}
-      rotation: {x: 0.64911294, y: 0.0251694, z: 0.033097327, w: 0.75955486}
-      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+      position: {x: -0.0000000018626451, y: 0.23637313, z: 4.656613e-10}
+      rotation: {x: 0.6731992, y: 0.31323734, z: -0.4386967, w: 0.5061922}
+      scale: {x: 0.99999857, y: 1.0000014, z: 1}
     - name: Foot.L_end
       parentName: Foot.L
-      position: {x: -0, y: 0.000995127, z: 0}
+      position: {x: -0, y: 0.0995127, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: UpperLeg.R
       parentName: Hip
-      position: {x: 0.00064115133, y: 0.00019654751, z: 0.00022895186}
-      rotation: {x: 0.00000089054674, y: -0.000000006732136, z: 0.99296784, w: -0.11838463}
-      scale: {x: 1.0000045, y: 1, z: 1}
+      position: {x: 0.06411514, y: 0.01965475, z: 0.022895187}
+      rotation: {x: -0.55501086, y: 0.0370045, z: 0.8209474, w: -0.1289923}
+      scale: {x: 0.9999988, y: 0.9999999, z: 1}
     - name: LowerLeg.R
       parentName: UpperLeg.R
-      position: {x: -1.1699022e-10, y: 0.0020767674, z: -5.47125e-12}
-      rotation: {x: -0.010614155, y: 0.001194938, z: -0.11201078, w: 0.9936496}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+      position: {x: -0.000000007450581, y: 0.20801401, z: -0.000000016763806}
+      rotation: {x: -0.04578205, y: 0.00048016576, z: -0.34163067, w: 0.93871844}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
     - name: Foot.R
       parentName: LowerLeg.R
-      position: {x: -4.3828195e-11, y: 0.002381838, z: 8.731149e-12}
-      rotation: {x: 0.64911294, y: -0.0251694, z: -0.033097327, w: 0.75955486}
-      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+      position: {x: 0.0000000037252903, y: 0.23637313, z: -4.656613e-10}
+      rotation: {x: 0.67319906, y: -0.31323728, z: 0.43869668, w: 0.5061923}
+      scale: {x: 0.9999986, y: 1.0000013, z: 0.99999994}
     - name: Foot.R_end
       parentName: Foot.R
-      position: {x: -0, y: 0.000995127, z: 0}
+      position: {x: -0, y: 0.0995127, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: IKControl.L
       parentName: Armature
-      position: {x: -0.0013538407, y: -0.00017807289, z: 0.0003786058}
+      position: {x: -0.13538407, y: -0.01780729, z: 0.03786058}
       rotation: {x: -0.00026620604, y: -0.000000062369466, z: 0.00020581209, w: 0.99999994}
       scale: {x: 1, y: 1, z: 1}
     - name: IKControl.L_end
       parentName: IKControl.L
-      position: {x: -0, y: 0.0006624764, z: 0}
+      position: {x: -0, y: 0.06624764, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: IKControl.R
       parentName: Armature
-      position: {x: 0.0013538407, y: -0.00017807289, z: 0.0003786058}
+      position: {x: 0.13538407, y: -0.01780729, z: 0.03786058}
       rotation: {x: -0.00026620604, y: 0.000000062369466, z: -0.00020581209, w: 0.99999994}
       scale: {x: 1, y: 1, z: 1}
     - name: IKControl.R_end
       parentName: IKControl.R
-      position: {x: -0, y: 0.0006624764, z: 0}
+      position: {x: -0, y: 0.06624764, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PoleTarget.L
       parentName: Armature
-      position: {x: -0.0012379332, y: -0.002329838, z: 0.0029088634}
+      position: {x: -0.12379332, y: -0.2329838, z: 0.29088634}
       rotation: {x: 0.7070827, y: 0.005844633, z: -0.7070827, w: -0.0058386074}
       scale: {x: 0.99999994, y: 0.9999999, z: 0.99944234}
     - name: PoleTarget.L_end
       parentName: PoleTarget.L
-      position: {x: -0, y: 0.0007423202, z: 0}
+      position: {x: -0, y: 0.07423202, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: PoleTarget.R
       parentName: Armature
-      position: {x: 0.0012379332, y: -0.002329838, z: 0.0029088634}
+      position: {x: 0.12379332, y: -0.2329838, z: 0.29088634}
       rotation: {x: 0.7070827, y: -0.005844633, z: 0.7070827, w: -0.0058386074}
       scale: {x: 0.99999994, y: 0.9999999, z: 0.99944234}
     - name: PoleTarget.R_end
       parentName: PoleTarget.R
-      position: {x: -0, y: 0.0007423202, z: 0}
+      position: {x: -0, y: 0.07423202, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Cube.001
-      parentName: MainCharacter(Clone)
+      parentName: RunnerCharacter(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 100, z: 100}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Cube.002
-      parentName: MainCharacter(Clone)
+      parentName: RunnerCharacter(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 100, z: 100}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Cube.003
-      parentName: MainCharacter(Clone)
+      parentName: RunnerCharacter(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 100, z: 100}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Cube.004
-      parentName: MainCharacter(Clone)
+      parentName: RunnerCharacter(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 100, z: 100}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Cube.011
-      parentName: MainCharacter(Clone)
+      parentName: RunnerCharacter(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 100, z: 100}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Gun.L
-      parentName: MainCharacter(Clone)
+      parentName: RunnerCharacter(Clone)
       position: {x: -0, y: 0.077938624, z: -0.00000025932243}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 0.3619, y: 0.3619, z: 0.3619}
+      rotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 0.003619, y: 0.003619, z: 0.003619}
     - name: Gun.R
-      parentName: MainCharacter(Clone)
+      parentName: RunnerCharacter(Clone)
       position: {x: -0, y: 0.077938624, z: -0.00000025932243}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 0.3619, y: 0.3619, z: 0.3619}
-    armTwist: 0.39
-    foreArmTwist: 0.244
+      rotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 0.003619, y: 0.003619, z: 0.003619}
+    armTwist: 0.5
+    foreArmTwist: 0.5
     upperLegTwist: 0.5
-    legTwist: 0.732
-    armStretch: 0.323
+    legTwist: 0.5
+    armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
