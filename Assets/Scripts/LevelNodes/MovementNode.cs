@@ -43,8 +43,8 @@ public class MovementNode : CharacterNode
                 _player.transform.position = Vector3.MoveTowards(_player.transform.position, _targetTransform.position, _movementSpeed * Time.deltaTime);
                 _player.transform.rotation = Quaternion.Lerp(_player.transform.rotation, _targetTransform.rotation, _rotationSpeed * Time.deltaTime);
 
-                Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, _targetCameraTransform.position, _movementSpeed * _cameraSpeedMultiplier * Time.deltaTime);
-                Camera.main.transform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, _targetCameraTransform.rotation, _rotationSpeed * _cameraRotationSpeedMultiplier * Time.deltaTime);
+                Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, _targetCameraTransform.position, _cameraSpeedMultiplier * Time.deltaTime);
+                Camera.main.transform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, _targetCameraTransform.rotation, _cameraRotationSpeedMultiplier * Time.deltaTime);
             }
             yield return new WaitForFixedUpdate();
         }
