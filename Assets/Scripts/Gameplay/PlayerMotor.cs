@@ -117,6 +117,11 @@ public class PlayerMotor : MonoBehaviour
         _animationController.SetTrigger("WallRun");
     }
 
+    public void DoSlide()
+    {
+        _animationController.SetTrigger("Slide");
+    }
+
 
     public IEnumerator SlowMotionEffect()
     {
