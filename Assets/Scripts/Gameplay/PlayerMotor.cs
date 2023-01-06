@@ -11,9 +11,14 @@ public class PlayerMotor : MonoBehaviour
 
     private float _startTimescale { get; set; }
     private float _startFixedDeltaTime { get; set; }
-
+    [SerializeField]
+    private ParticleSystem _magParticle;
+    [SerializeField]
+    private ParticleSystem _bulletParticle;
     [SerializeField]
     private ParticleSystem _BloodParticlePrefab;
+    [SerializeField]
+    private Transform _rightWeaponEnd;
 
     private void Start()
     {
@@ -56,18 +61,43 @@ public class PlayerMotor : MonoBehaviour
                 EnemyBehaviour enemyBehaviour = hit.transform.GetComponentInParent<EnemyBehaviour>();
                 if (enemyBehaviour != null)
                 {
-                    enemyBehaviour.DepartFromThisMortalCoil();
-                    StartCoroutine(SlowMotionEffect());
-                    hit.transform.GetComponent<Rigidbody>().AddForceAtPosition(50 * ray.direction.normalized, hit.transform.position, ForceMode.Impulse);
-                    var bloodParticle = Instantiate(_BloodParticlePrefab, hit.transform);
-                    bloodParticle.transform.position = hit.transform.position;
-                    bloodParticle.transform.LookAt(Camera.main.transform);
-                    Destroy(bloodParticle, 1f);
+                    StartCoroutine(ReactOnBulletHit(hit, enemyBehaviour, ray.direction.normalized));
                 }
             }
-//            Debug.Log(hit.transform.tag);
         }
     }
+
+    private IEnumerator ReactOnBulletHit(RaycastHit hit, EnemyBehaviour enemyBehaviour, Vector3 hitDirection)
+    {
+        AudioManager.Instance.PlayGunShot();
+        var bulletParticle = Instantiate(_bulletParticle);
+        bulletParticle.transform.position = _rightWeaponEnd.position;
+        bulletParticle.transform.LookAt(hit.transform);
+        bulletParticle.Play();
+        Destroy(bulletParticle, 1f);
+        StopSlowMotion();
+        Time.timeScale = 0.8f;
+        for (int i = 0; i < 3; i++)
+        {
+            yield return new WaitForFixedUpdate();
+        }
+        StartSlowMotion();
+        enemyBehaviour.DepartFromThisMortalCoil();
+        
+        hit.transform.GetComponent<Rigidbody>().AddForceAtPosition(50 * hitDirection, hit.transform.position, ForceMode.Impulse);
+        var bloodParticle = Instantiate(_BloodParticlePrefab, hit.transform);
+        bloodParticle.transform.position = hit.transform.position;
+        bloodParticle.transform.LookAt(Camera.main.transform);
+        Destroy(bloodParticle, 1f);
+        _magParticle.Play();
+        _magParticle.Play();
+        for (int i = 0; i < 5; i++)
+        {
+            yield return new WaitForFixedUpdate();
+        }
+        AudioManager.Instance.PlayHitSound();
+    }
+
 
 
     public void StartSlowMotion()
