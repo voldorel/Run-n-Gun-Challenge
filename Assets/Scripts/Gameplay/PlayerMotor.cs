@@ -12,6 +12,9 @@ public class PlayerMotor : MonoBehaviour
     private float _startTimescale { get; set; }
     private float _startFixedDeltaTime { get; set; }
 
+    [SerializeField]
+    private ParticleSystem _BloodParticlePrefab;
+
     private void Start()
     {
         _startTimescale = Time.timeScale;
@@ -56,9 +59,13 @@ public class PlayerMotor : MonoBehaviour
                     enemyBehaviour.DepartFromThisMortalCoil();
                     StartCoroutine(SlowMotionEffect());
                     hit.transform.GetComponent<Rigidbody>().AddForceAtPosition(50 * ray.direction.normalized, hit.transform.position, ForceMode.Impulse);
+                    var bloodParticle = Instantiate(_BloodParticlePrefab, hit.transform);
+                    bloodParticle.transform.position = hit.transform.position;
+                    bloodParticle.transform.LookAt(Camera.main.transform);
+                    Destroy(bloodParticle, 1f);
                 }
             }
-            Debug.Log(hit.transform.tag);
+//            Debug.Log(hit.transform.tag);
         }
     }
 

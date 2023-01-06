@@ -398,7 +398,7 @@ MonoBehaviour:
   - {fileID: 9009832653609010658}
   - {fileID: 7051627777025070204}
   - {fileID: 7103680845198527683}
-  _gunJoint: {fileID: 7437408563632342090}
+  _gunTransform: {fileID: 7437408563632342090}
 --- !u!1 &642482376541961510
 GameObject:
   m_ObjectHideFlags: 0
