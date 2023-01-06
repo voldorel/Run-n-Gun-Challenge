@@ -54,7 +54,8 @@ public class PlayerMotor : MonoBehaviour
                 if (enemyBehaviour != null)
                 {
                     enemyBehaviour.DepartFromThisMortalCoil();
-                    hit.transform.GetComponent<Rigidbody>().AddForceAtPosition(200000 * ray.direction.normalized, hit.transform.position);
+                    StartCoroutine(SlowMotionEffect());
+                    hit.transform.GetComponent<Rigidbody>().AddForceAtPosition(50 * ray.direction.normalized, hit.transform.position, ForceMode.Impulse);
                 }
             }
             Debug.Log(hit.transform.tag);
@@ -71,6 +72,24 @@ public class PlayerMotor : MonoBehaviour
     public void Vault() //only for test
     {
         _animationController.SetTrigger("Vault");
+    }
+
+
+    public void WallRun()
+    {
+        _animationController.SetTrigger("WallRun");
+    }
+
+
+    public IEnumerator SlowMotionEffect()
+    {
+        StopSlowMotion();
+        Time.timeScale = 0.8f;
+        for (int i = 0; i < 3; i++)
+        {
+            yield return new WaitForFixedUpdate();
+        }
+        StartSlowMotion();
     }
 
     public void StopSlowMotion()

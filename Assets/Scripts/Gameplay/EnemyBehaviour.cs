@@ -10,6 +10,8 @@ public class EnemyBehaviour : MonoBehaviour
     private float _fadeStart { get; set; }
     [SerializeField]
     Renderer[] _renderers;
+    [SerializeField]
+    Transform _gunJoint;
 
 
     private void Start()
@@ -30,6 +32,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         _animator.enabled = false;
         EnableRagdoll(true);
+        _gunJoint.parent = null;
         StartCoroutine(FadeToGray());
     }
 
